@@ -10,7 +10,8 @@ Northwind Manufacturing is invented. So are its ledger and its approvers.
 ## What you need
 
 - Python 3.11 or later
-- An account on `platform.jou-labs.com`. [Request access from Jou Labs](https://www.jou-labs.com/platform).
+- An account on `platform.jou-labs.com`. To request access, use **Request a Platform Briefing** at the very bottom of the
+  [platform page](https://www.jou-labs.com/platform).
 
 ## Run it
 
