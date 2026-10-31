@@ -10,7 +10,7 @@ Northwind Manufacturing is invented. So are its ledger and its approvers.
 ## What you need
 
 - Python 3.11 or later
-- An account on `platform.jou-labs.com`
+- An account on `platform.jou-labs.com`. [Request access from Jou Labs](https://www.jou-labs.com/platform).
 
 ## Run it
 
@@ -77,3 +77,7 @@ then sign it again with a key of your own:
   another key still passes. `verify.py` saves the key on first use and checks everything against that copy. That first
   use is the moment you trust the platform, so compare it with a copy you hold elsewhere if you can.
 - **Records are signed one at a time.** Each has a sequence number, but none links to the one before it.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
