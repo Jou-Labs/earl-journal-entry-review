@@ -1,6 +1,6 @@
 # Governed journal-entry review with EARL
 
-A small application that decides whether a journal entry may post. The rules are written down, each decision names the
+A small governed application that decides whether a journal entry may post. The rules are written down, each decision names the
 rule behind it, and each decision leaves a signed record you can check without trusting the platform.
 
 Northwind Manufacturing is invented. So are its ledger and its approvers.
@@ -78,6 +78,16 @@ then sign it again with a key of your own:
   another key still passes. `verify.py` saves the key on first use and checks everything against that copy. That first
   use is the moment you trust the platform, so compare it with a copy you hold elsewhere if you can.
 - **Records are signed one at a time.** Each has a sequence number, but none links to the one before it.
+
+## Why the rules are written this way
+
+These notes explain the rules, so they live here and not in the corpus, where every sentence can become a fact.
+
+- The corpus is training material for the adjudicator a reviewer consults before a period close. The close calendar and
+  the materiality thresholds live in the reviewer's own application.
+- The reviewer treats a manual entry differently from a recurring entry because a person chose the account and the amount.
+- Every approval fact names the entry type and the approver in one sentence, because the reviewer, and the adjudicator
+  built from these documents, both ground on that pair.
 
 ## License
 

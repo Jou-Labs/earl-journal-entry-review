@@ -14,4 +14,4 @@ A missing approval creates an exception. A suspense balance at the close creates
 
 ## Why exceptions are written down
 
-The reviewer decides from the entry type, the account and the approvals, and from nothing else. That is why every approval fact names the entry type and the approver in one sentence: the reviewer, and the adjudicator built from these documents, both ground on that pair.
+The reviewer decides from the entry type, the account and the approvals, and from nothing else.

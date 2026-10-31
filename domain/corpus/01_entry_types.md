@@ -1,6 +1,6 @@
 # Northwind Manufacturing journal-entry review: entry types
 
-> Illustrative. Northwind Manufacturing, its ledger and its approvers are invented so the vertical is legible. This corpus is training material for the adjudicator a reviewer consults before a period close; the close calendar and the materiality thresholds live in the reviewer's own application.
+> Illustrative. Northwind Manufacturing, its ledger and its approvers are invented so the vertical is legible.
 
 A journal entry posts to the ledger. A journal entry names an account. A journal entry carries an amount and a period.
 
@@ -14,4 +14,4 @@ The manual entry carries a narrative. The accrual entry carries a narrative. The
 
 ## Why the types are separate
 
-The reviewer treats a manual entry differently from a recurring entry because a person chose the account and the amount. A schedule cannot choose; a person can. That difference is the whole reason journal-entry review exists.
+A schedule cannot choose; a person can. That difference is the whole reason journal-entry review exists.
