@@ -1,0 +1,81 @@
+{
+  "subject": "NorthwindJournalEntryReview",
+  "lessons": [
+    {
+      "id": "JE.1",
+      "title": "Entries, accounts and approvals",
+      "grade": "Kindergarten",
+      "requires": [],
+      "teaches": ["an entry names an account; an approval authorizes an entry"],
+      "propositions": [
+        "an entry names an account.",
+        "an approval authorizes an entry.",
+        "an approver grants an approval."
+      ],
+      "assessments": [
+        {"a": "entry", "b": "account", "prompt": "Does an entry name an account?"},
+        {"a": "approval", "b": "entry", "prompt": "Does an approval authorize an entry?"}
+      ],
+      "mastery": 0.95
+    },
+    {
+      "id": "JE.2",
+      "title": "Exceptions and reconciliation",
+      "grade": "Grade 1",
+      "requires": ["JE.1"],
+      "teaches": ["an exception follows a missing approval; a reconciliation clears the suspense account"],
+      "propositions": [
+        "an exception follows an approval.",
+        "a reconciliation clears an account.",
+        "a flag precedes an exception."
+      ],
+      "assessments": [
+        {"a": "exception", "b": "approval", "prompt": "Does an exception follow a missing approval?"},
+        {"a": "reconciliation", "b": "account", "prompt": "Does a reconciliation clear an account?"}
+      ],
+      "mastery": 0.95
+    },
+    {
+      "id": "JE.3",
+      "title": "Named entry types and their approvals",
+      "grade": "Grade 2",
+      "requires": ["JE.1"],
+      "teaches": ["which approver each named entry type requires"],
+      "propositions": [
+        "manual requires controller.",
+        "manual requires preparer.",
+        "manual carries narrative.",
+        "accrual requires controller.",
+        "accrual carries narrative.",
+        "reversal requires preparer.",
+        "reversal references accrual.",
+        "recurring requires schedule."
+      ],
+      "assessments": [
+        {"a": "manual", "b": "controller", "prompt": "Does a manual entry require a controller approval?"},
+        {"a": "accrual", "b": "controller", "prompt": "Does an accrual entry require a controller approval?"},
+        {"a": "reversal", "b": "preparer", "prompt": "Does a reversal entry require a preparer signature?"}
+      ],
+      "mastery": 0.95
+    },
+    {
+      "id": "JE.4",
+      "title": "Accounts that raise the approval bar",
+      "grade": "Grade 3",
+      "requires": ["JE.2", "JE.3"],
+      "teaches": ["cash and revenue entries need the treasurer; suspense entries need a reconciliation"],
+      "propositions": [
+        "manual requires treasurer.",
+        "cash requires treasurer.",
+        "revenue requires treasurer.",
+        "suspense requires reconciliation.",
+        "suspense creates exception."
+      ],
+      "assessments": [
+        {"a": "manual", "b": "treasurer", "prompt": "Does a manual cash entry require a treasurer approval?"},
+        {"a": "suspense", "b": "reconciliation", "prompt": "Does a suspense entry require a reconciliation?"}
+      ],
+      "mastery": 0.95
+    }
+  ]
+}

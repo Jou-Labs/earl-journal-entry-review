@@ -1,0 +1,33 @@
+[
+  {
+    "id": "JE-1001",
+    "type": "manual",
+    "route": "controller",
+    "actor": "controller"
+  },
+  {
+    "id": "JE-1002",
+    "type": "accrual",
+    "route": "controller",
+    "actor": "controller"
+  },
+  {
+    "id": "JE-1003",
+    "type": "recurring",
+    "route": "controller",
+    "actor": "controller"
+  },
+  {
+    "id": "JE-1004",
+    "type": "reversal",
+    "route": "controller",
+    "actor": "controller"
+  },
+  {
+    "id": "JE-1005",
+    "type": "manual",
+    "route": "controller",
+    "actor": "controller",
+    "action": "void_entry"
+  }
+]

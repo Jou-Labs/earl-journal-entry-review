@@ -1,0 +1,69 @@
+{
+  "format": "earl-domain-policy/1",
+  "name": "journal-entry review",
+  "dispositions": {
+    "VERIFIED": "ALLOW",
+    "CONTESTED": "DENY",
+    "UNCERTAIN": "REVIEW",
+    "HALLUCINATED": "DENY"
+  },
+  "rules": [
+    {
+      "id": "asserted-pair",
+      "type": "require_asserted_pair",
+      "action": "review",
+      "reason": "a VERIFIED must be about the pair the claim asserts"
+    },
+    {
+      "id": "grounding-floor",
+      "type": "min_grounding",
+      "threshold": 0.5,
+      "action": "review"
+    },
+    {
+      "id": "no-contradictions",
+      "type": "max_contradictions",
+      "max": 0,
+      "action": "deny"
+    },
+    {
+      "id": "recurring-needs-no-approver",
+      "type": "closed_world",
+      "entity": "recurring",
+      "permitted": [
+        "schedule",
+        "entry"
+      ],
+      "action": "deny",
+      "reason": "a recurring entry requires no approval; the schedule is the approval"
+    },
+    {
+      "id": "reversal-preparer-only",
+      "type": "closed_world",
+      "entity": "reversal",
+      "permitted": [
+        "preparer",
+        "accrual",
+        "entry"
+      ],
+      "action": "deny",
+      "reason": "a reversal entry requires a preparer signature only"
+    }
+  ],
+  "authority": {
+    "default": "review",
+    "actions": [
+      {
+        "id": "post",
+        "action": "post_entry",
+        "actors": [
+          "controller",
+          "treasurer"
+        ],
+        "min_allowed_claims": 1,
+        "otherwise": "deny",
+        "reason": "an entry is posted by a controller or a treasurer, on a route the policy allows"
+      }
+    ]
+  }
+}
