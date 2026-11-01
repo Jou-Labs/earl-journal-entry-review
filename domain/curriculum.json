@@ -23,14 +23,13 @@
       "title": "Exceptions and reconciliation",
       "grade": "Grade 1",
       "requires": ["JE.1"],
-      "teaches": ["an exception follows a missing approval; a reconciliation clears the suspense account"],
+      "teaches": ["a missing approval creates an exception; a reconciliation clears the suspense account"],
       "propositions": [
-        "an exception follows an approval.",
-        "a reconciliation clears an account.",
-        "a flag precedes an exception."
+        "an approval prevents an exception.",
+        "a reconciliation clears an account."
       ],
       "assessments": [
-        {"a": "exception", "b": "approval", "prompt": "Does an exception follow a missing approval?"},
+        {"a": "approval", "b": "exception", "prompt": "Does an approval prevent an exception?"},
         {"a": "reconciliation", "b": "account", "prompt": "Does a reconciliation clear an account?"}
       ],
       "mastery": 0.95
@@ -63,16 +62,15 @@
       "title": "Accounts that raise the approval bar",
       "grade": "Grade 3",
       "requires": ["JE.2", "JE.3"],
-      "teaches": ["cash and revenue entries need the treasurer; suspense entries need a reconciliation"],
+      "teaches": ["a treasury entry needs the treasurer, the controller and the preparer; a suspense entry needs a reconciliation"],
       "propositions": [
-        "manual requires treasurer.",
-        "cash requires treasurer.",
-        "revenue requires treasurer.",
-        "suspense requires reconciliation.",
-        "suspense creates exception."
+        "treasury requires treasurer.",
+        "treasury requires controller.",
+        "treasury requires preparer.",
+        "suspense requires reconciliation."
       ],
       "assessments": [
-        {"a": "manual", "b": "treasurer", "prompt": "Does a manual cash entry require a treasurer approval?"},
+        {"a": "treasury", "b": "treasurer", "prompt": "Does a treasury entry require a treasurer approval?"},
         {"a": "suspense", "b": "reconciliation", "prompt": "Does a suspense entry require a reconciliation?"}
       ],
       "mastery": 0.95
